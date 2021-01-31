@@ -1,0 +1,304 @@
+{
+  "METADATA": {
+    "buildsheetFilename": "/Users/marwin/Desktop/testExportToJSOn/BRA Project Titan Jumphost - WgHS Azure Build v1.0.xlsx",
+    "buildsheetModifiedTime": "2020-11-30T23:24:03.9159752+11:00",
+    "catalogueMapFilename": "/Users/marwin/Desktop/testExportToJSOn/Cats/ServiceCatalogueMap.Azure.v1.1.xlsx",
+    "catalogueMapModifiedTime": "2020-11-30T23:57:03.7734278+11:00",
+    "processingTime": "2020-11-30T23:57:20.0281640+11:00"
+  },
+  "name": "Business Review Analytics Platform",
+  "tier": "tier3",
+  "tla": "BRA",
+  "Environments": [
+    "Production"
+  ],
+  "tags": {
+    "provisionedBy": "WgHS",
+    "businessDomain": "Enterprise",
+    "team": "Risk and Assurance analytics",
+    "support": "riskandassuranceanalytics@woolworths.com.au",
+    "tla": "BRA",
+    "businessUnit": "Risk and Assurance Analytics",
+    "owner": "Timothy Van Laun",
+    "costCentre": "6013",
+    "appSysId": "1e28fd3f4f971a40a7f0a40f0310c72b",
+    "tier": "tier3",
+    "wghsTracker": "Project Titan Dedicated jump server",
+    "name": "Business Review Analytics Platform"
+  },
+  "AppInfo": [
+    {
+      "Name": "Application Name",
+      "Value": "Business Review Analytics Platform"
+    },
+    {
+      "Name": "Application Three Letter Abbreviation",
+      "Value": "BRA"
+    },
+    {
+      "Name": "Application Sys Id",
+      "Value": "1e28fd3f4f971a40a7f0a40f0310c72b"
+    },
+    {
+      "Name": "Cost Centre",
+      "Value": "6013"
+    },
+    {
+      "Name": "Business Domain",
+      "Value": "Enterprise"
+    },
+    {
+      "Name": "Business Criticality (Tier)",
+      "Value": "Tier 3  Low"
+    },
+    {
+      "Name": "Business Unit",
+      "Value": "Risk and Assurance Analytics"
+    },
+    {
+      "Name": "Application Owner",
+      "Value": "Timothy Van Laun"
+    },
+    {
+      "Name": "Support Email",
+      "Value": "riskandassuranceanalytics@woolworths.com.au"
+    },
+    {
+      "Name": "Support Team Name",
+      "Value": "Risk and Assurance analytics"
+    },
+    {
+      "Name": "Tracker Project Name",
+      "Value": "Project Titan Dedicated jump server"
+    },
+    {
+      "Name": "Environments",
+      "Value": "Production"
+    },
+    {
+      "Name": "Provisioned by",
+      "Value": "WgHS"
+    },
+    {
+      "Name": "Buildsheet URI",
+      "Value": "https://docs.google.com/spreadsheets/d/1wGzy-iCIIw1XygGNt1XHJ9KNbTK90WB-iTQEcSj8S78"
+    },
+    {
+      "Name": "HLD URI",
+      "Value": "https://docs.google.com/presentation/d/1Vkd902eiaN1Y4lP2dOXb4XGlxk01fc8l9ydlMXl-Mo0/edit?urp=gmail_link&gxids=7757#slide=id.g35b60d5025_0_0"
+    },
+    {
+      "Name": "Deployment Report URI",
+      "Value": null
+    },
+    {
+      "Name": "Firewall Rules URI",
+      "Value": null
+    }
+  ],
+  "Svc": {
+    "label": "APPPROD1",
+    "Region.DisplayName": "Australia East",
+    "Environment.DisplayName": "Production",
+    "Subscription.DisplayName": "corpprod",
+    "ServiceType.DisplayName": "App Server - Standalone",
+    "ServiceSize.DisplayName": "VM Standard_E8s_v3 ( 8 vCPU, 64GiB RAM)",
+    "numOfSets": 1.0,
+    "numOfVm": 1.0,
+    "Os.DisplayName": "Win2016",
+    "OsImageType.DisplayName": "Wipro SOE",
+    "analyticsWorkspace": "corp-oms-prod",
+    "DomainToJoin.DisplayName": "wowcorp.com.au (AD)",
+    "Proximity": false,
+    "availSet": false,
+    "asr": false,
+    "BackupPolicy.DisplayName": "Default Prod Policy",
+    "patchWeek": 1.0,
+    "PatchingWindow.DisplayName": "Sunday 00:00 - 06:00",
+    "PatchingAlternateWindow.DisplayName": "Wednesday 00:00 - 06:00",
+    "caUim": false,
+    "uc4": false,
+    "dataDriveSize": 128.0,
+    "Region": {
+      "id": "AustraliaEast",
+      "Status": "Approved",
+      "DisplayName": "Australia East",
+      "RegionAbbv": "aae",
+      "VM": "Approved",
+      "AppGateway": "Approved",
+      "ProdvNet": "CorpPrdAEIntVnet",
+      "ProdvNetRG": "corp-prd-shared-aae",
+      "UatVnet": "CorpUatAEIntVnet",
+      "UatVnetRG": "corp-uat-shared-aae",
+      "perfVnet": "CorpUatAEIntVnet",
+      "perfVnetRG": "corp-uat-shared-aae",
+      "TestVnet": "CorpDevAEIntVnet",
+      "TestVnetRG": "corp-dev-shared-aae",
+      "DevVnet": "CorpDevAEIntVnet",
+      "DevVnetRG": "corp-dev-shared-aae",
+      "SapProdVnet": "SAPPrdAESpokeVNet",
+      "SapProdVnetRG": "SAP-PRD-VNET-AAE",
+      "SapNonProdVnet": "SAPNonPrdAESpokeVNet",
+      "SapNonProdVnetRG": "SAP-NONPRD-VNET-AAE",
+      "mgmtVnet": "MgmtPrdSharedAEVnet",
+      "mgmtVnetRG": "MGMT-VNET-SHARED-AAE"
+    },
+    "Environment": {
+      "id": "prod",
+      "Status": "Approved",
+      "DisplayName": "Production",
+      "Subscriptions": "corpprod",
+      "LogAnalytics": "corp-oms-prod",
+      "DefaultBackupPolicy": "Default Prod Policy"
+    },
+    "Subscription": {
+      "id": "9935cd2d-0126-474f-867a-c53c8ee53a4a",
+      "Status": "Approved",
+      "DisplayName": "corpprod",
+      "SubName": "corpprod",
+      "Environment": "Production",
+      "EnvAbbrv": "P",
+      "EnvShort": "CorpProd",
+      "DevOpsSpn": "WGHS-AZURE-CORPPROD",
+      "OmsWorkspace": "corp-oms-prod",
+      "OmsWorkspaceRG": "corp-oms-prod",
+      "aeRSV": "CORP-PROD-RSV-GenPurpose-AAE",
+      "aeRSVrg": "CORP-PROD-RSV-GenPurpose-AAE",
+      "asRSV": "CORP-PROD-RSV-GenPurpose-AAS",
+      "asRSVrg": "CORP-PROD-RSV-GenPurpose-AAS",
+      "aeVnet": "CorpPrdAEIntVnet",
+      "aeVnetRG": "corp-prd-shared-aae",
+      "asVnet": "CorpPrdASIntVnet",
+      "asVnetRG": "corp-prd-shared-aas",
+      "appSubnet": "corp-prd-Int-App3",
+      "dbSubnet": "corp-prd-Int-DB2",
+      "webSubnet": "corp-prd-Int-Web",
+      "appGwSubnet": "corp-prd-Int-AppGWv2",
+      "SqlMiSubnet": "corp-prd-int-SqlMi"
+    },
+    "ServiceType": {
+      "id": "app1",
+      "Status": "Approved",
+      "DisplayName": "App Server - Standalone",
+      "Tier": "App",
+      "ScaleSet": false,
+      "NumOfVMs": 1.0,
+      "NumOfRegions": 1.0,
+      "NumOfZonesPrimaryRegion": null,
+      "NumOfZonesSecondaryRegion": null,
+      "Subnet": null,
+      "DataDiskSku": null,
+      "DbDistribution": null,
+      "LogDistribution": null,
+      "MaintDiskSize": null,
+      "lbvipFrontEndIps": 1.0,
+      "lbvipPort": null,
+      "lbvipProbePort": null,
+      "lbvipSku": null,
+      "Abbv": "AS",
+      "ProcessVars": true,
+      "StdOS": null,
+      "dbDataDisks": null,
+      "dbLogSize": null,
+      "dbTempSize": null,
+      "OLog": null,
+      "MLog": null,
+      "NICs": 1.0,
+      "IPs": 1.0
+    },
+    "ServiceSize": {
+      "id": "Standard_E8s_v3",
+      "Tags": "Discounted",
+      "DisplayName": "VM Standard_E8s_v3 ( 8 vCPU, 64GiB RAM)",
+      "Type": "VM",
+      "TypeDescription": "VM Enhanced",
+      "Series": "E",
+      "vCPU": 8.0,
+      "MemoryInGib": 64.0,
+      "MaxDataDiskCount": 16.0,
+      "OSDiskInGib": 1023.0,
+      "TempDiskInGib": 128.0,
+      "MaxThroughputIops": null,
+      "MaxThroughputMBps": null,
+      "MaxNics": null,
+      "MaxNetBandwidthMbps": null,
+      "pp": null,
+      "MaxDatabases": null,
+      "MaxStorageSizeTiB": 32.0
+    },
+    "Os": {
+      "id": "WindowsServer2016",
+      "Status": "Approved",
+      "DisplayName": "Win2016",
+      "WiproImageNameRef": "WOW-SOE-W2K16-DC-IMAGES",
+      "WiproImageVer": "1.1.0",
+      "ImgFactImageNameRef": "windows-2016",
+      "ImgFactImageVer": "2016.0.2020102903",
+      "OsAbbv": "W"
+    },
+    "OsImageType": {
+      "id": "WOW_SHAREDIMAGE_GALLERY",
+      "Status": "Approved",
+      "DisplayName": "Wipro SOE"
+    },
+    "DomainToJoin": {
+      "id": "wowcorp.com.au",
+      "Status": "Approved",
+      "DisplayName": "wowcorp.com.au (AD)"
+    },
+    "BackupPolicy": {
+      "id": "Prod-DailyPolicy-001",
+      "Status": "Default",
+      "DisplayName": "Default Prod Policy",
+      "Environment": "Production",
+      "Begin": 0.875,
+      "End": 0.9166666667,
+      "Agent": "SGL/OraRMAN",
+      "RetentionDays": 15.0,
+      "InstantRecovery": 2.0,
+      "aeVault": "CORP-PROD-RSV-GenPurpose-AAE",
+      "aeVaultRG": "CORP-PROD-RSV-GenPurpose-AAE",
+      "asVault": "CORP-PROD-RSV-GenPurpose-AAS",
+      "asVaultRG": "CORP-PROD-RSV-GenPurpose-AAS",
+      "Replication": null
+    },
+    "PatchingWindow": {
+      "id": "d7-t1",
+      "Status": "Approved",
+      "DisplayName": "Sunday 00:00 - 06:00",
+      "Weekday": "Sunday",
+      "Begin": 0.0,
+      "End": 0.25
+    },
+    "PatchingAlternateWindow": {
+      "id": "d3-t1",
+      "Status": "Approved",
+      "DisplayName": "Wednesday 00:00 - 06:00",
+      "Weekday": "Wednesday",
+      "Begin": 0.0,
+      "End": 0.25
+    }
+  },
+  "AppGw": null,
+  "Lb": null,
+  "Nsg": {
+    "Inbound": null,
+    "Outbound": null
+  },
+  "Dns": null,
+  "Groups": {
+    "StandardGroups": [
+      {
+        "name": "g-sec-BRA-Support"
+      },
+      {
+        "name": "g-sec-BRA-DevOps"
+      },
+      {
+        "name": "g-sec-BRA-Contributor"
+      }
+    ],
+    "SecurityGroups": null,
+    "ServiceAccounts": null
+  }
+}

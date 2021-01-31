@@ -1,0 +1,401 @@
+
+{
+    "METADATA":  {
+                     "buildsheetFilename":  "\\\\HSWTMSISA00010.whs.dell.local\\buildsheets\\JDA (Blue Yonder) WMS MFDC - Archive Servers for EQ -  WgHS DPC Build v0.1.xlsx",
+                     "buildsheetModifiedTime":  "2020-10-15T11:14:41.5708050+11:00",
+                     "catalogueMapFilename":  "\\\\HSWTMSISA00010.whs.dell.local\\buildsheets\\Cats\\ServiceCatalogueMap.DPC.v1.0.xlsx",
+                     "catalogueMapModifiedTime":  "2020-10-22T17:10:33.9967089+11:00",
+                     "processingTime":  "2020-10-22T17:12:29.7627500+11:00"
+                 },
+    "name":  "Blue Yonder Archive",
+    "tier":  "tier3",
+    "tla":  "WMS",
+    "Environments":  [
+                         "Production"
+                     ],
+    "tags":  {
+                 "tier":  "tier3",
+                 "appSysId":  null,
+                 "name":  "Blue Yonder Archive",
+                 "costCentre":  "3981",
+                 "owner":  "Gretche Botha",
+                 "team":  "SST-WMS",
+                 "businessUnit":  "Logistics",
+                 "tla":  "WMS",
+                 "wghsTracker":  "WMS MFDC - Archive Servers for EQ",
+                 "businessDomain":  "PVC",
+                 "support":  "nonprod-sst-wms@woolworths.com.au",
+                 "provisionedBy":  "WgHS"
+             },
+    "AppInfo":  [
+                    {
+                        "Name":  "Application Name",
+                        "Value":  "Blue Yonder Archive"
+                    },
+                    {
+                        "Name":  "Application Three Letter Abbreviation",
+                        "Value":  "WMS"
+                    },
+                    {
+                        "Name":  "Application Sys Id",
+                        "Value":  null
+                    },
+                    {
+                        "Name":  "Cost Centre",
+                        "Value":  "3981"
+                    },
+                    {
+                        "Name":  "Business Domain",
+                        "Value":  "PVC"
+                    },
+                    {
+                        "Name":  "Business Criticality (Tier)",
+                        "Value":  "Tier 3  Low"
+                    },
+                    {
+                        "Name":  "Business Unit",
+                        "Value":  "Logistics"
+                    },
+                    {
+                        "Name":  "Application Owner",
+                        "Value":  "Gretche Botha"
+                    },
+                    {
+                        "Name":  "Support Email",
+                        "Value":  "nonprod-sst-wms@woolworths.com.au"
+                    },
+                    {
+                        "Name":  "Support Team Name",
+                        "Value":  "SST-WMS"
+                    },
+                    {
+                        "Name":  "Tracker Project Name",
+                        "Value":  "WMS MFDC - Archive Servers for EQ"
+                    },
+                    {
+                        "Name":  "Environments",
+                        "Value":  "Production"
+                    },
+                    {
+                        "Name":  "Provisioned by",
+                        "Value":  "WgHS"
+                    },
+                    {
+                        "Name":  "Buildsheet URI",
+                        "Value":  "https://docs.google.com/spreadsheets/d/1tfFL-TpkZ-la8cA5RFerDQkFr3dE2ExHtbojZgm0cpQ"
+                    },
+                    {
+                        "Name":  "HLD URL",
+                        "Value":  null
+                    },
+                    {
+                        "Name":  "Deployment Report URL",
+                        "Value":  null
+                    },
+                    {
+                        "Name":  "Firewall Rules URL",
+                        "Value":  null
+                    }
+                ],
+    "Svc":  [
+                {
+                    "label":  "Archive_Modeller",
+                    "AvailabilityZone.DisplayName":  "EQDC - AZ2",
+                    "Environment.DisplayName":  "Production",
+                    "ServiceType.DisplayName":  "App Server",
+                    "ServiceSize.DisplayName":  "VM - Standard Medium (8 CPU, 16GB RAM)",
+                    "numOfSets":  1,
+                    "numOfVm":  1,
+                    "series":  "General",
+                    "Os.DisplayName":  "RHEL 7",
+                    "ServiceClass.DisplayName":  "Standard Production",
+                    "antiAffinity":  false,
+                    "srm":  false,
+                    "BackupPolicy.DisplayName":  "VM Default Prod Policy",
+                    "patchWeek":  4,
+                    "PatchingWindow.DisplayName":  "Tuesday 00:00 - 06:00",
+                    "caUim":  true,
+                    "harvest":  true,
+                    "uc4":  true,
+                    "jdaWebmethods":  "JDA",
+                    "dataDriveSize":  "50GB",
+                    "notes":  "Software componenets: \nRHEL-JDA-Javapackage \nRHEL-JDA-WMS-Utilities",
+                    "AvailabilityZone":  {
+                                             "id":  "az2",
+                                             "Status":  "Approved",
+                                             "DisplayName":  "EQDC - AZ2",
+                                             "VM":  "Approved",
+                                             "Name":  "EQDC",
+                                             "ComputeLocation":  "ra-az2",
+                                             "Reservation":  "AZ2"
+                                         },
+                    "Environment":  {
+                                        "id":  "Production",
+                                        "Status":  "Approved",
+                                        "DisplayName":  "Production",
+                                        "Code":  "P",
+                                        "NsxGroup":  "SG-PRODUCTION",
+                                        "Network":  "wowprod",
+                                        "NetworkPrivate":  "wowprivate",
+                                        "IaasEnvironment":  "Production",
+                                        "IaasSla":  "P",
+                                        "IaasAdGroup":  "Prod",
+                                        "VmFolder":  "PRODUCTION",
+                                        "BackupFolder":  "Production"
+                                    },
+                    "ServiceType":  {
+                                        "id":  "appserver",
+                                        "Status":  "Approved",
+                                        "DisplayName":  "App Server",
+                                        "Tier":  "App",
+                                        "ScaleSet":  false,
+                                        "NumOfVMs":  1,
+                                        "NumOfRegions":  1,
+                                        "NumOfZonesPrimaryRegion":  null,
+                                        "NumOfZonesSecondaryRegion":  null,
+                                        "DbDistribution":  null,
+                                        "LogDistribution":  null,
+                                        "MaintDiskSize":  null,
+                                        "lbvipPort":  null,
+                                        "lbvipProbePort":  null,
+                                        "lbvipSku":  null,
+                                        "Code":  "as",
+                                        "Sla":  "A",
+                                        "NsxGroup":  "APP",
+                                        "AdGroup":  "ap"
+                                    },
+                    "ServiceSize":  {
+                                        "id":  "ValueSet.SC.M",
+                                        "Status":  "Approved",
+                                        "DisplayName":  "VM - Standard Medium (8 CPU, 16GB RAM)",
+                                        "Type":  "VM",
+                                        "TypeDescription":  "General",
+                                        "Series":  "General",
+                                        "vCPU":  8,
+                                        "MemoryInGib":  16,
+                                        "OSDiskInGib":  60,
+                                        "pp":  250.62
+                                    },
+                    "Os":  {
+                               "id":  "ValueSet.rhel7x",
+                               "Status":  "Approved",
+                               "DisplayName":  "RHEL 7",
+                               "ImageNameRef":  "Rhel7",
+                               "OsFamily":  "L"
+                           },
+                    "ServiceClass":  {
+                                         "id":  "Standard Production",
+                                         "Status":  "Approved",
+                                         "DisplayName":  "Standard Production"
+                                     },
+                    "BackupPolicy":  {
+                                         "id":  "Prod-DailyPolicy-001",
+                                         "Status":  "Default",
+                                         "DisplayName":  "VM Default Prod Policy",
+                                         "Environment":  "Production",
+                                         "Agent":  null,
+                                         "RetentionDays":  14,
+                                         "BackupCopies":  "0+1",
+                                         "Schedule":  "Daily Full"
+                                     },
+                    "PatchingWindow":  {
+                                           "id":  "d2-t1",
+                                           "Status":  "Approved",
+                                           "DisplayName":  "Tuesday 00:00 - 06:00",
+                                           "Weekday":  "Tuesday",
+                                           "Begin":  0,
+                                           "End":  0.25
+                                       }
+                },
+                {
+                    "label":  "Archive_Modeller_dummy",
+                    "AvailabilityZone.DisplayName":  "EQDC - AZ2",
+                    "Environment.DisplayName":  "Production",
+                    "ServiceType.DisplayName":  "App Server",
+                    "ServiceSize.DisplayName":  "VM - Standard Medium (8 CPU, 16GB RAM)",
+                    "numOfSets":  1,
+                    "numOfVm":  1,
+                    "series":  "General",
+                    "Os.DisplayName":  "RHEL 7",
+                    "ServiceClass.DisplayName":  "Standard Production",
+                    "antiAffinity":  false,
+                    "srm":  false,
+                    "BackupPolicy.DisplayName":  "VM Default Prod Policy",
+                    "patchWeek":  4,
+                    "PatchingWindow.DisplayName":  "Tuesday 00:00 - 06:00",
+                    "caUim":  true,
+                    "harvest":  true,
+                    "uc4":  true,
+                    "jdaWebmethods":  "JDA",
+                    "dataDriveSize":  "50GB",
+                    "notes":  "Software componenets: \nRHEL-JDA-Javapackage \nRHEL-JDA-WMS-Utilities",
+                    "AvailabilityZone":  {
+                                             "id":  "az2",
+                                             "Status":  "Approved",
+                                             "DisplayName":  "EQDC - AZ2",
+                                             "VM":  "Approved",
+                                             "Name":  "EQDC",
+                                             "ComputeLocation":  "ra-az2",
+                                             "Reservation":  "AZ2"
+                                         },
+                    "Environment":  {
+                                        "id":  "Production",
+                                        "Status":  "Approved",
+                                        "DisplayName":  "Production",
+                                        "Code":  "P",
+                                        "NsxGroup":  "SG-PRODUCTION",
+                                        "Network":  "wowprod",
+                                        "NetworkPrivate":  "wowprivate",
+                                        "IaasEnvironment":  "Production",
+                                        "IaasSla":  "P",
+                                        "IaasAdGroup":  "Prod",
+                                        "VmFolder":  "PRODUCTION",
+                                        "BackupFolder":  "Production"
+                                    },
+                    "ServiceType":  {
+                                        "id":  "appserver",
+                                        "Status":  "Approved",
+                                        "DisplayName":  "App Server",
+                                        "Tier":  "App",
+                                        "ScaleSet":  false,
+                                        "NumOfVMs":  1,
+                                        "NumOfRegions":  1,
+                                        "NumOfZonesPrimaryRegion":  null,
+                                        "NumOfZonesSecondaryRegion":  null,
+                                        "DbDistribution":  null,
+                                        "LogDistribution":  null,
+                                        "MaintDiskSize":  null,
+                                        "lbvipPort":  null,
+                                        "lbvipProbePort":  null,
+                                        "lbvipSku":  null,
+                                        "Code":  "as",
+                                        "Sla":  "A",
+                                        "NsxGroup":  "APP",
+                                        "AdGroup":  "ap"
+                                    },
+                    "ServiceSize":  {
+                                        "id":  "ValueSet.SC.M",
+                                        "Status":  "Approved",
+                                        "DisplayName":  "VM - Standard Medium (8 CPU, 16GB RAM)",
+                                        "Type":  "VM",
+                                        "TypeDescription":  "General",
+                                        "Series":  "General",
+                                        "vCPU":  8,
+                                        "MemoryInGib":  16,
+                                        "OSDiskInGib":  60,
+                                        "pp":  250.62
+                                    },
+                    "Os":  {
+                               "id":  "ValueSet.rhel7x",
+                               "Status":  "Approved",
+                               "DisplayName":  "RHEL 7",
+                               "ImageNameRef":  "Rhel7",
+                               "OsFamily":  "L"
+                           },
+                    "ServiceClass":  {
+                                         "id":  "Standard Production",
+                                         "Status":  "Approved",
+                                         "DisplayName":  "Standard Production"
+                                     },
+                    "BackupPolicy":  {
+                                         "id":  "Prod-DailyPolicy-001",
+                                         "Status":  "Default",
+                                         "DisplayName":  "VM Default Prod Policy",
+                                         "Environment":  "Production",
+                                         "Agent":  null,
+                                         "RetentionDays":  14,
+                                         "BackupCopies":  "0+1",
+                                         "Schedule":  "Daily Full"
+                                     },
+                    "PatchingWindow":  {
+                                           "id":  "d2-t1",
+                                           "Status":  "Approved",
+                                           "DisplayName":  "Tuesday 00:00 - 06:00",
+                                           "Weekday":  "Tuesday",
+                                           "Begin":  0,
+                                           "End":  0.25
+                                       }
+                }
+            ],
+    "Lb":  {
+               "label":  null,
+               "Environment.DisplayName":  "",
+               "ServiceType.DisplayName":  "",
+               "bePorts":  "",
+               "sslOffload":  false,
+               "probeProtocol":  "",
+               "probePath":  null,
+               "Environment":  null,
+               "ServiceType":  null
+           },
+    "Gslb":  {
+                 "label":  null,
+                 "Environment.DisplayName":  "",
+                 "ServiceType.DisplayName":  "",
+                 "bePorts":  "",
+                 "sslOffload":  false,
+                 "probeProtocol":  "",
+                 "probePorts":  "",
+                 "Environment":  null,
+                 "ServiceType":  null
+             },
+    "Files":  null,
+    "Firewall":  [
+                     {
+                         "source":  "SG-WMS-Web",
+                         "destination":  "SG-WMS-APP",
+                         "destinationPort":  null,
+                         "Allow":  "Block",
+                         "protocal":  null
+                     },
+                     {
+                         "source":  "SG-WMS-APP",
+                         "destination":  "SG-WMS-DB",
+                         "destinationPort":  "1433, 1521",
+                         "Allow":  "Allow",
+                         "protocal":  "TCP"
+                     },
+                     {
+                         "source":  "SG-WMS-Web",
+                         "destination":  "SG-WMS-DB",
+                         "destinationPort":  null,
+                         "Allow":  "Block",
+                         "protocal":  null
+                     }
+                 ],
+    "Dns":  null,
+    "Groups":  {
+                   "StandardGroups":  [
+                                          {
+                                              "name":  "g-sec-WMS-prod-db",
+                                              "notes":  "Administrator access to production database servers"
+                                          },
+                                          {
+                                              "name":  "g-sec-WMS-prod-ap",
+                                              "notes":  "Administrator access to production servers"
+                                          },
+                                          {
+                                              "name":  "g-sec-WMS-nonprod-db",
+                                              "notes":  "Administrator access to non production database servers"
+                                          },
+                                          {
+                                              "name":  "g-sec-WMS-nonprod-ap",
+                                              "notes":  "Administrator access to non production servers"
+                                          },
+                                          {
+                                              "name":  "g-sec-WMS-support",
+                                              "notes":  "CMP access for support to the applicaiton"
+                                          },
+                                          {
+                                              "name":  "g-sec-WMS-developer",
+                                              "notes":  "CMP access for developers to the applicaiton"
+                                          },
+                                          {
+                                              "name":  "g-sec-WMS-owner",
+                                              "notes":  "CMP access for owner of the applicaiton"
+                                          }
+                                      ],
+                   "SecurityGroups":  null,
+                   "ServiceAccounts":  null
+               }
+}
